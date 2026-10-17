@@ -21,7 +21,7 @@ npx serve .
 | `app.js` | the scroll engine: one rAF loop, the depth gauge, the pinned fields |
 | `assets/` | strata photographs, the weather clip, the surface stamp |
 | `fonts/` | EB Garamond, self-hosted |
-| `gorilla.jpg` | the reason for the descent |
+| `assets/gorilla.jpg` | the reason for the descent |
 
 ## Credits
 
