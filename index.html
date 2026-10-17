@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Bottom of the World: keep scrolling</title>
+<meta name="description" content="A well log of a six-thousand-kilometre descent. One rule: keep scrolling. Something is waiting at the bottom.">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<!-- instruments: depth gauge, depth ruler, the bit -->
+<div class="console">
+  <div class="gauge">
+    <p class="gauge__label">depth below the surface</p>
+    <div class="gauge__value"><span id="gauge-num">0</span> <span id="gauge-unit">m</span></div>
+    <p class="gauge__status" id="gauge-status">keep scrolling.</p>
+  </div>
+</div>
+<div class="ruler" aria-hidden="true">
+  <p class="ruler__cap">0 m</p>
+  <div class="ruler__ticks" id="ruler-ticks"></div>
+  <p class="ruler__cap">6,371 km</p>
+  <div class="ruler__bit" id="ruler-bit"></div>
+</div>
+
+<main>
+
+  <!-- 0 m — the surface -->
+  <section class="hero" id="top" data-depth="0" data-ink="light">
+    <div class="hero__pin">
+      <img class="hero__photo" id="hero-photo" src="assets/surface-hero.jpg" width="2400" height="1350" alt="A dark forest treeline dissolving upward into pale grey fog: the surface, as seen on the way down.">
+      <h1 class="hero__title" id="hero-title">Keep scrolling.</h1>
+      <div class="card" id="permit">
+        <p class="card__top"><span>The Page</span><span>Well log</span></p>
+        <p class="card__note" data-rise style="--i:0">Something is waiting at the bottom. It has been waiting a very long time.</p>
+        <div class="card__facts" data-rise style="--i:1">
+          <p>Wellhead: your screen</p>
+          <p>Target depth: 6,371 km</p>
+          <p>Estimated time: one sitting</p>
+        </div>
+        <div class="card__foot" data-rise style="--i:2">
+          <p class="card__credit">Surface photographs: Patrick Hendry, Pavel Voinov and Sonja Langford, via Unsplash.</p>
+          <div class="card__row">
+            <a class="button" href="#soil">Start scrolling</a>
+            <a class="link" href="#gorilla">Skip to the bottom</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 1 m -->
+  <section class="s s--bg" id="soil" data-depth="1" data-ink="dark" style="--field:#2a2118; --field-ink:#eeecea; min-height:110svh">
+    <div class="s__bg" aria-hidden="true"><img src="assets/fields/soil.jpg" alt="" loading="lazy" decoding="async"></div>
+    <div class="s__inner">
+      <div class="s__body">
+        <p class="num" data-rise style="--i:0">1 <span class="unit">m</span></p>
+        <h2 class="s__h" data-rise style="--i:1">Topsoil.</h2>
+        <p class="s__p" data-rise style="--i:2">Dark, damp, recently rained on. Behind you now: the sky, the weather, and everything you have ever owned.</p>
+      </div>
+      <p class="chip"><span class="chip__well">The Page · well log</span><span class="chip__ask">Keep scrolling.</span><span class="chip__left" data-left>6,371 km to go</span></p>
+    </div>
+  </section>
+
+  <!-- 12 m — the first lie -->
+  <section class="s lie" id="almost" data-depth="12" data-ink="light" style="--field:#eeecea; --field-ink:#2b2a28; min-height:110svh">
+    <div class="s__inner">
+      <div class="s__body">
+        <h2 class="lie__word" data-rise style="--i:0">Almost there.</h2>
+        <p class="s__p lie__asides" data-rise style="--i:1">(Twelve metres down. 6,371 kilometres to go. This claim will not survive the next screen.)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 14 m -->
+  <section class="s s--bg" id="sand" data-depth="14" data-ink="light" style="--field:#bfa983; --field-ink:#2b2a28; min-height:130svh">
+    <div class="s__bg" aria-hidden="true"><img src="assets/fields/till.jpg" alt="" loading="lazy" decoding="async"></div>
+    <div class="s__inner">
+      <div class="s__body">
+        <h2 class="s__h" data-rise style="--i:0">That was a lie.</h2>
+        <p class="s__say" data-rise style="--i:1">There are 6,371 kilometres left. That was the first and last time this page will do that.</p>
+        <p class="s__p" data-rise style="--i:2">This layer is glacial till: sand, gravel and boulders dragged here by ice, then left. The ice is gone. The sand stayed.</p>
+      </div>
+      <p class="chip"><span class="chip__well">The Page · well log</span><span class="chip__ask">Keep scrolling.</span><span class="chip__left" data-left>6,371 km to go</span></p>
+    </div>
+  </section>
+
+  <!-- 40 m -->
+  <section class="s s--bg" id="granite" data-depth="40" data-ink="light" style="--field:#8d908b; --field-ink:#232523; min-height:130svh">
+    <div class="s__bg" aria-hidden="true"><img src="assets/fields/granite.jpg" alt="" loading="lazy" decoding="async"></div>
+    <div class="s__inner">
+      <div class="s__body">
+        <p class="num" data-rise style="--i:0">40 <span class="unit">m</span></p>
+        <h2 class="s__h" data-rise style="--i:1">Granite.</h2>
+        <p class="s__say" data-rise style="--i:2">The deepest foundations of anything ever built stop a few metres behind you. Everything below is older than every living thing.</p>
+        <p class="s__p" data-rise style="--i:3">Real drilling gets about a metre an hour through granite. You are doing about forty kilometres an hour. Nothing about your descent is legal in real geology.</p>
+      </div>
+      <p class="chip"><span class="chip__well">The Page · well log</span><span class="chip__ask">Keep scrolling.</span><span class="chip__left" data-left>6,371 km to go</span></p>
+    </div>
+  </section>
+
+  <!-- 120 m -->
+  <section class="s s--bg" id="water" data-depth="120" data-ink="dark" style="--field:#46504a; --field-ink:#eeecea; min-height:150svh">
+    <div class="s__bg" aria-hidden="true"><img src="assets/fields/water.jpg" alt="" loading="lazy" decoding="async"></div>
+    <div class="s__inner">
+      <div class="s__body">
+        <p class="num" data-rise style="--i:0">120 <span class="unit">m</span></p>
+        <h2 class="s__h" data-rise style="--i:1">The last water.</h2>
+        <p class="s__say" data-rise style="--i:2">Groundwater. The last rain you will ever see. Some of it fell before your grandparents were born.</p>
+        <figure class="plate" data-rise style="--i:3">
+          <div class="shutter">
+            <video muted loop playsinline preload="metadata" poster="assets/surface-fog-poster.jpg" width="640" height="480">
+              <source src="assets/surface-fog.webm" type="video/webm">
+            </video>
+          </div>
+          <figcaption>The weather you left behind: valley fog clearing, seen from far above, looped and muted.</figcaption>
+        </figure>
+      </div>
+      <p class="chip"><span class="chip__well">The Page · well log</span><span class="chip__ask">Keep scrolling.</span><span class="chip__left" data-left>6,371 km to go</span></p>
+    </div>
+  </section>
+
+  <!-- 828 m -->
+  <section class="s" id="burj" data-depth="828" data-ink="light" style="--field:#b7b5af; --field-ink:#232523; min-height:150svh">
+    <div class="s__inner">
+      <div class="s__body">
+        <p class="num" data-rise data-count="828" data-decimals="0" data-unit="m" style="--i:0"><span class="v">828</span> <span class="unit">m</span></p>
+        <h2 class="s__h" data-rise style="--i:1">The Burj, inverted.</h2>
+        <p class="s__say" data-rise style="--i:2">The tallest building on Earth is 828 metres tall. Here it stands on its head, spire flush with the surface.</p>
+        <p class="s__p" data-rise style="--i:3">You have scrolled the height of the tallest thing humans ever built, in the wrong direction.</p>
+      </div>
+      <p class="chip"><span class="chip__well">The Page · well log</span><span class="chip__ask">Keep scrolling.</span><span class="chip__left" data-left>6,370 km to go</span></p>
+    </div>
+  </section>
+
+  <!-- 1 km -->
+  <section class="s s--bg" id="kilometre" data-depth="1000" data-ink="dark" style="--field:#2e3134; --field-ink:#eeecea; min-height:150svh">
+    <div class="s__bg" aria-hidden="true"><img src="assets/fields/kilometre.jpg" alt="" loading="lazy" decoding="async"></div>
+    <div class="s__inner">
+      <div class="s__body">
+        <p class="num" data-rise style="--i:0">1 <span class="unit">km</span></p>
+        <h2 class="s__h" data-rise style="--i:1">The metre retires.</h2>
+        <p class="s__say" data-rise style="--i:2">One kilometre down. From this mark the page measures in kilometres, because the page is not made of patience.</p>
+        <p class="s__p" data-rise style="--i:3">At this pace you are descending about twenty-six kilometres a second. Escape velocity is 11.2. You are not escaping. You are arriving.</p>
+      </div>
+      <p class="chip"><span class="chip__well">The Page · well log</span><span class="chip__ask">Keep scrolling.</span><span class="chip__left" data-left>6,370 km to go</span></p>
+    </div>
+  </section>
+
+  <!-- 3,700 m -->
+  <section class="s s--bg" id="ocean" data-depth="3700" data-ink="dark" style="--field:#1e2f38; --field-ink:#eeecea; min-height:130svh">
+    <div class="s__bg" aria-hidden="true"><img src="assets/fields/ocean.jpg" alt="" loading="lazy" decoding="async"></div>
+    <div class="s__inner">
+      <div class="s__body">
+        <p class="num" data-rise data-count="3700" data-decimals="0" data-unit="m" style="--i:0"><span class="v">3,700</span> <span class="unit">m</span></p>
+        <h2 class="s__h" data-rise style="--i:1">An ocean, minus the ocean.</h2>
+        <p class="s__say" data-rise style="--i:2">The sea went its own way; the darkness stayed. This is exactly as deep as the average ocean, and exactly as dark.</p>
+        <p class="s__p" data-rise style="--i:3">Most of the deep sea is empty. So is most of this. You are, statistically, not here either.</p>
+      </div>
+      <p class="chip"><span class="chip__well">The Page · well log</span><span class="chip__ask">Keep scrolling.</span><span class="chip__left" data-left>6,367 km to go</span></p>
+    </div>
+  </section>
+
+  <!-- 8,848.86 m -->
+  <section class="s s--bg" id="everest" data-depth="8848.86" data-ink="light" style="--field:#97a0a6; --field-ink:#232523; min-height:150svh">
+    <div class="s__bg" aria-hidden="true"><img src="assets/fields/everest.jpg" alt="" loading="lazy" decoding="async"></div>
+    <div class="s__inner">
+      <div class="s__body">
+        <p class="num" data-rise data-count="8848.86" data-decimals="2" data-unit="m" style="--i:0"><span class="v">8,848.86</span> <span class="unit">m</span></p>
+        <h2 class="s__h" data-rise style="--i:1">Everest, inverted.</h2>
+        <p class="s__say" data-rise style="--i:2">The tallest mountain would fit exactly in this hole, peak flush with the surface, a small white hill above a very long hole.</p>
+        <p class="s__p" data-rise style="--i:3">6,362 kilometres to go.</p>
+      </div>
+      <p class="chip"><span class="chip__well">The Page · well log</span><span class="chip__ask">Keep scrolling.</span><span class="chip__left" data-left>6,362 km to go</span></p>
+    </div>
+  </section>
+
+  <!-- 8,849 m — the second lie -->
+  <section class="s lie" id="lie2" data-depth="8849" data-ink="dark" style="--field:#33302b; --field-ink:#eeecea; min-height:110svh">
+    <div class="s__inner">
+      <div class="s__body">
+        <h2 class="lie__word" data-rise style="--i:0">Almost there.</h2>
+        <p class="s__p lie__asides" data-rise style="--i:1">(We lied again. It is a compulsion. Still 6,362 kilometres. The next time this page says it, it will be telling the truth.)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10,994 m -->
+  <section class="s s--bg" id="challenger" data-depth="10994" data-ink="dark" style="--field:#16262e; --field-ink:#eeecea; min-height:130svh">
+    <div class="s__bg" aria-hidden="true"><img src="assets/fields/challenger.jpg" alt="" loading="lazy" decoding="async"></div>
+    <div class="s__inner">
+      <div class="s__body">
+        <p class="num" data-rise data-count="10994" data-decimals="0" data-unit="m" style="--i:0"><span class="v">10,994</span> <span class="unit">m</span></p>
+        <h2 class="s__h" data-rise style="--i:1">The Challenger Deep, dry.</h2>
+        <p class="s__say" data-rise style="--i:2">The deepest water on the planet is 10,994 metres down, deeper than Everest is tall.</p>
+        <p class="s__p" data-rise style="--i:3">No water here, but the number is exact, and exactness is the only decoration this sheet can afford. At the real Challenger Deep there are tripod fish standing on three stiff legs. They have no opinion about you. Neither does this hole — yet.</p>
+      </div>
+      <p class="chip"><span class="chip__well">The Page · well log</span><span class="chip__ask">Keep scrolling.</span><span class="chip__left" data-left>6,360 km to go</span></p>
+    </div>
+  </section>
+
+  <!-- 12,262 m -->
+  <section class="s s--bg" id="kola" data-depth="12262" data-ink="dark" style="--field:#3e3a33; --field-ink:#eeecea; min-height:150svh">
+    <div class="s__bg" aria-hidden="true"><img src="assets/fields/kola.jpg" alt="" loading="lazy" decoding="async"></div>
+    <div class="s__inner">
+      <div class="s__body">
+        <p class="num" data-rise data-count="12262" data-decimals="0" data-unit="m" style="--i:0"><span class="v">12,262</span> <span class="unit">m</span></p>
+        <h2 class="s__h" data-rise style="--i:1">Humanity's deepest hole.</h2>
+        <p class="s__say" data-rise style="--i:2">From 1970 to 1994 the Soviet Union drilled the Kola Superdeep Borehole to 12,262 metres, to see what was down here.</p>
+        <p class="s__p" data-rise style="--i:3">What was down here: rock, water, and gas. The hole is 23 centimetres wide. You are the only visitor it has ever had.</p>
+      </div>
+      <p class="chip"><span class="chip__well">The Page · well log</span><span class="chip__ask">Keep scrolling.</span><span class="chip__left" data-left>6,359 km to go</span></p>
+    </div>
+  </section>
+
+  <!-- the band, one -->
+  <section class="s band" id="band1" data-depth="19000" data-ink="dark" style="--field:#191c1a">
+    <div class="band__pin">
+      <div class="band__track" data-band>
+        <p class="band__word">It gets quieter.</p>
+        <p class="band__word">Mind the mantle.</p>
+        <p class="band__word">Do not stop now.</p>
+        <p class="band__word">6,352 kilometres to go.</p>
+        <p class="band__word">Keep scrolling.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 35 km -->
+  <section class="s s--bg" id="moho" data-depth="35000" data-ink="dark" style="--field:#5a4b3c; --field-ink:#eeecea; min-height:160svh">
+    <div class="s__bg" aria-hidden="true"><img src="assets/fields/moho.jpg" alt="" loading="lazy" decoding="async"></div>
+    <div class="s__inner">
+      <div class="s__body">
+        <p class="num" data-rise data-count="35" data-decimals="0" data-unit="km" style="--i:0"><span class="v">35</span> <span class="unit">km</span></p>
+        <h2 class="s__h" data-rise style="--i:1">The crust ends here.</h2>
+        <p class="s__say" data-rise style="--i:2">Below this line, nobody has ever stood. Not a miner, not a drill — nobody. You are the first visitor.</p>
+        <p class="s__p" data-rise style="--i:3">It is called the Moho, short for Mohorovičić. Pronounce it mo-ho-ro-vee-chitch. Everyone gets it wrong, including this page.</p>
+        <figure class="plate" data-rise style="--i:4">
+          <div class="shutter">
+            <img src="assets/surface-rain.jpg" width="1600" height="1200" alt="A pale grey field with scattered hay bales under a white sky.">
+          </div>
+          <figcaption>The world above, pictured: a field, bales, a sky. All of it is up there.</figcaption>
+        </figure>
+      </div>
+      <p class="chip"><span class="chip__well">The Page · well log</span><span class="chip__ask">Keep scrolling.</span><span class="chip__left" data-left>6,336 km to go</span></p>
+    </div>
+  </section>
+
+  <!-- 100 km -->
+  <section class="s s--bg" id="asthenosphere" data-depth="100000" data-ink="dark" style="--field:#6e3f2c; --field-ink:#eeecea; min-height:130svh">
+    <div class="s__bg" aria-hidden="true"><img src="assets/fields/asthenosphere.jpg" alt="" loading="lazy" decoding="async"></div>
+    <div class="s__inner">
+      <div class="s__body">
+        <p class="num" data-rise data-count="100" data-decimals="0" data-unit="km" style="--i:0"><span class="v">100</span> <span class="unit">km</span></p>
+        <h2 class="s__h" data-rise style="--i:1">The rock goes soft.</h2>
+        <p class="s__say" data-rise style="--i:2">Rigid rock ends here. Everything below flows, slowly: a few centimetres a year, like a glacier made of stone.</p>
+        <p class="s__p" data-rise style="--i:3">The mantle has been flowing for four billion years. You are moving twenty million times faster than it, which is why it is annoyed.</p>
+      </div>
+      <p class="chip"><span class="chip__well">The Page · well log</span><span class="chip__ask">Keep scrolling.</span><span class="chip__left" data-left>6,271 km to go</span></p>
+    </div>
+  </section>
+
+  <!-- 410 km -->
+  <section class="s" id="transition" data-depth="410000" data-ink="dark" style="--field:#7c3a26; --field-ink:#eeecea; min-height:120svh">
+    <div class="s__inner">
+      <div class="s__body">
+        <p class="num" data-rise data-count="410" data-decimals="0" data-unit="km" style="--i:0"><span class="v">410</span> <span class="unit">km</span></p>
+        <h2 class="s__h" data-rise style="--i:1">The transition zone.</h2>
+        <p class="s__say" data-rise style="--i:2">The olivine crystals squeeze into new shapes under the pressure. This is the only interesting thing for 250 kilometres.</p>
+        <p class="s__p" data-rise style="--i:3">Keep scrolling. It is not asking much of you, compared to what it is asking of the olivine.</p>
+      </div>
+      <p class="chip"><span class="chip__well">The Page · well log</span><span class="chip__ask">Keep scrolling.</span><span class="chip__left" data-left>5,961 km to go</span></p>
+    </div>
+  </section>
+
+  <!-- 660 km -->
+  <section class="s" id="lowermantle" data-depth="660000" data-ink="dark" style="--field:#8c3418; --field-ink:#eeecea; min-height:130svh">
+    <div class="s__inner">
+      <div class="s__body">
+        <p class="num" data-rise data-count="660" data-decimals="0" data-unit="km" style="--i:0"><span class="v">660</span> <span class="unit">km</span></p>
+        <h2 class="s__h" data-rise style="--i:1">No light has ever been here.</h2>
+        <p class="s__say" data-rise style="--i:2">Not one photon of sunlight has ever reached this depth. Not a rumour of it.</p>
+        <p class="s__p" data-rise style="--i:3">Below you: 2,080 kilometres of rock, and then something much, much brighter.</p>
+      </div>
+      <p class="chip"><span class="chip__well">The Page · well log</span><span class="chip__ask">Keep scrolling.</span><span class="chip__left" data-left>5,711 km to go</span></p>
+    </div>
+  </section>
+
+  <!-- the core tray -->
+  <section class="s tray" id="tray" data-depth="1700000" data-ink="dark" style="--field:#a03b14; --field-ink:#eeecea; min-height:170svh">
+    <div class="tray__inner">
+      <div class="tray__say">
+        <h2 class="s__h" data-rise style="--i:0">Everything you have passed is standing in the tray.</h2>
+        <p class="s__p" data-rise style="--i:1">The slips stand tallest where the deepest landmark is. Nothing in this tray is invented.</p>
+      </div>
+      <div class="tray__slips">
+        <div class="slip slip--t1" data-rise style="--i:0">
+          <p class="slip__depth">828 m</p>
+          <p class="slip__note">The Burj Khalifa, upside down. Spire at the surface; you at its foundation.</p>
+          <p class="slip__status">passed</p>
+        </div>
+        <div class="slip slip--t2" data-rise style="--i:1">
+          <p class="slip__depth">1 km</p>
+          <p class="slip__note">The metre retired here. The page switched to kilometres out of self-respect.</p>
+          <p class="slip__status">passed</p>
+        </div>
+        <div class="slip slip--t3" data-rise style="--i:2">
+          <p class="slip__depth">3,700 m</p>
+          <p class="slip__note">Average ocean depth. No ocean present. Darkness as advertised.</p>
+          <p class="slip__status">passed</p>
+        </div>
+        <div class="slip slip--t4" data-rise style="--i:3">
+          <p class="slip__depth">8,848.86 m</p>
+          <p class="slip__note">Everest, inverted. Peak flush with the surface, small white hill above a long hole.</p>
+          <p class="slip__status">passed</p>
+        </div>
+        <div class="slip slip--t5" data-rise style="--i:4">
+          <p class="slip__depth">10,994 m</p>
+          <p class="slip__note">The Challenger Deep, dry. Deeper than Everest is tall.</p>
+          <p class="slip__status">passed</p>
+        </div>
+        <div class="slip slip--t6" data-rise style="--i:5">
+          <p class="slip__depth">12,262 m</p>
+          <p class="slip__note">The Kola hole. Twenty-three centimetres wide, and still the deepest anyone has ever dug.</p>
+          <p class="slip__status">passed</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2,740 km -->
+  <section class="s s--bg" id="dprime" data-depth="2740000" data-ink="dark" style="--field:#8e2b12; --field-ink:#eeecea; min-height:140svh">
+    <div class="s__bg" aria-hidden="true"><img src="assets/fields/dprime.jpg" alt="" loading="lazy" decoding="async"></div>
+    <div class="s__inner">
+      <div class="s__body">
+        <p class="num" data-rise data-count="2740" data-decimals="0" data-unit="km" style="--i:0"><span class="v">2,740</span> <span class="unit">km</span></p>
+        <h2 class="s__h" data-rise style="--i:1">The D, double prime.</h2>
+        <p class="s__say" data-rise style="--i:2">150 kilometres of the strangest rock on the planet, right above the core, named after a jump in sound waves.</p>
+        <p class="s__p" data-rise style="--i:3">Down here the only sounds are pressure and time. Listen. …Nothing was there. Keep scrolling.</p>
+      </div>
+      <p class="chip"><span class="chip__well">The Page · well log</span><span class="chip__ask">Keep scrolling.</span><span class="chip__left" data-left>3,631 km to go</span></p>
+    </div>
+  </section>
+
+  <!-- 2,890 km -->
+  <section class="s s--bg" id="outercore" data-depth="2890000" data-ink="dark" style="--field:#9c4a16; --field-ink:#eeecea; min-height:150svh">
+    <div class="s__bg" aria-hidden="true"><img src="assets/fields/outercore.jpg" alt="" loading="lazy" decoding="async"></div>
+    <div class="s__inner">
+      <div class="s__body">
+        <p class="num" data-rise data-count="2890" data-decimals="0" data-unit="km" style="--i:0"><span class="v">2,890</span> <span class="unit">km</span></p>
+        <h2 class="s__h" data-rise style="--i:1">Liquid iron.</h2>
+        <p class="s__say" data-rise style="--i:2">It is about 4,000 degrees, it moves like a river, and it runs the compass in your pocket.</p>
+        <p class="s__p" data-rise style="--i:3">You are inside the engine now. Every needle on the surface is answering to this room. Nothing on the surface has noticed. Keep scrolling.</p>
+      </div>
+      <p class="chip"><span class="chip__well">The Page · well log</span><span class="chip__ask">Keep scrolling.</span><span class="chip__left" data-left>3,481 km to go</span></p>
+    </div>
+  </section>
+
+  <!-- 5,150 km -->
+  <section class="s s--bg" id="innercore" data-depth="5150000" data-ink="light" style="--field:#ecedE9; --field-ink:#232523; min-height:150svh">
+    <div class="s__bg" aria-hidden="true"><img src="assets/fields/innercore.jpg" alt="" loading="lazy" decoding="async"></div>
+    <div class="s__inner">
+      <div class="s__body">
+        <p class="num" data-rise data-count="5150" data-decimals="0" data-unit="km" style="--i:0"><span class="v">5,150</span> <span class="unit">km</span></p>
+        <h2 class="s__h" data-rise style="--i:1">Solid iron, 5,400 degrees.</h2>
+        <p class="s__say" data-rise style="--i:2">As hot as the surface of the Sun. The Sun has been informed and is flattered.</p>
+        <p class="s__p" data-rise style="--i:3">The pressure here is 3.6 million times the air at the surface. Standing anywhere else on Earth you would explode. Here, you are politely compressed.</p>
+      </div>
+      <p class="chip"><span class="chip__well">The Page · well log</span><span class="chip__ask">Keep scrolling.</span><span class="chip__left" data-left>1,221 km to go</span></p>
+    </div>
+  </section>
+
+  <!-- 6,371 km -->
+  <section class="s" id="bottom" data-depth="6371000" data-ink="dark" style="--field:#17191b; --field-ink:#eeecea; min-height:160svh">
+    <div class="s__inner">
+      <div class="s__body">
+        <h2 class="s__h" data-rise style="--i:0">That is the whole planet.</h2>
+        <p class="s__say" data-rise style="--i:1">6,371 kilometres of Earth are behind you: every rock, every layer, every number on this sheet.</p>
+        <p class="s__p" data-rise style="--i:2">Except there is one thing left. It is standing at the bottom, and it has been standing there the whole time.</p>
+      </div>
+      <p class="chip"><span class="chip__well">The Page · well log</span><span class="chip__ask">Keep scrolling.</span><span class="chip__left" data-left>0 km to go</span></p>
+    </div>
+  </section>
+
+  <!-- the receipt -->
+  <section class="s" id="receipt" data-depth="6371000" data-ink="dark" style="--field:#1c1f22; --field-ink:#eeecea; min-height:170svh">
+    <div class="s__inner">
+      <div class="receipt__grid">
+        <div class="receipt__lead">
+          <h2 class="s__h" data-rise style="--i:0">The descent, added up.</h2>
+          <p class="s__p" data-rise style="--i:1">Every layer above you, listed the way a well log lists them. The numbers are geology's, not this page's.</p>
+        </div>
+        <div class="slip" data-rise style="--i:2">
+          <p class="slip__well">Descent log, itemised</p>
+          <p class="slip__meta">depth interval thicknesses, in kilometres</p>
+          <table>
+            <tbody>
+              <tr><th scope="row">Crust</th><td></td><td></td></tr>
+              <tr><td class="lead">Continental crust, average</td><td></td><td>35</td></tr>
+              <tr><th scope="row">Mantle</th><td></td><td></td></tr>
+              <tr><td class="lead">Upper mantle</td><td></td><td>375</td></tr>
+              <tr><td class="lead">Transition zone</td><td></td><td>250</td></tr>
+              <tr><td class="lead">Lower mantle</td><td></td><td>2,080</td></tr>
+              <tr><td class="lead">D-double-prime layer</td><td></td><td>150</td></tr>
+              <tr><th scope="row">Core</th><td></td><td></td></tr>
+              <tr><td class="lead">Outer core, liquid</td><td></td><td>2,260</td></tr>
+              <tr><td class="lead">Inner core, solid</td><td></td><td>1,221</td></tr>
+              <tr class="is-total"><th scope="row">Your descent</th><td></td><td>6,371 km</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="receipt__sum">
+          <p class="receipt__total" data-rise data-count="6371" data-decimals="0" data-unit="km" style="--i:0"><span class="v">6,371</span><span class="unit"> km</span></p>
+          <p class="receipt__cap" data-rise style="--i:1">The sum of the slip. Check it; geologists did the hard part.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- the band, last -->
+  <section class="s band band--short" id="band2" data-depth="6371000" data-ink="dark" style="--field:#101214">
+    <div class="band__pin">
+      <div class="band__track" data-band>
+        <p class="band__word">Keep scrolling.</p>
+        <p class="band__word">One thing remains.</p>
+        <p class="band__word">Almost there.</p>
+        <p class="band__word">He can hear you.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- the reply card -->
+  <section class="s cta" id="last" data-depth="6371000" data-ink="dark" style="--field:#1e1b17; --field-ink:#eeecea; min-height:140svh">
+    <div class="s__inner cta__grid">
+      <p class="cta__note" data-rise style="--i:0">One entry is still missing from the log.</p>
+    </div>
+    <div class="cta__card" data-rise style="--i:1">
+      <h2>The unlogged visitor.</h2>
+      <p>You are at the bottom of the world. The final entry stands directly below this card, and it has been waiting since the surface.</p>
+      <a class="cta__action" href="#gorilla">Keep scrolling.</a>
+      <p class="cta__tiny">last one</p>
+    </div>
+  </section>
+
+  <!-- the unlogged visitor -->
+  <section class="s ape" id="gorilla" data-depth="inf" data-ink="dark" data-status="you may stop now." style="--field:#0c0e10; --field-ink:#eeecea; min-height:140svh">
+    <div class="ape__inner">
+      <figure class="ape__figure" data-rise style="--i:0">
+        <img src="gorilla.jpg" width="197" height="255" alt="A gorilla looking straight at the camera, one middle finger raised.">
+      </figure>
+      <p class="ape__said" data-rise style="--i:1">Thanks for scrolling.</p>
+      <p class="ape__under" data-rise style="--i:2">He watched all 6,371 kilometres of it.</p>
+    </div>
+  </section>
+
+  <!-- the back of the card -->
+  <footer class="end" id="end" data-depth="inf" data-ink="dark" data-status="you may really stop now.">
+    <div class="end__inner">
+      <div class="end__panel" data-rise style="--i:0">
+        <div class="end__cols">
+          <div>
+            <p class="end__sign">Thanks for descending.</p>
+            <p class="end__msg">6,371 kilometres in one sitting. You can tell people you went to the bottom of the world and met the gorilla. They will believe the first part.</p>
+            <div class="end__links">
+              <a class="link" href="#top">Dig again, from the top.</a>
+              <a class="link" href="#end">Stay at the bottom.</a>
+            </div>
+          </div>
+          <div class="end__stamp-row">
+            <div class="end__stamp">
+              <img src="assets/surface-stamp.jpg" width="600" height="800" alt="A treeline in dusk fog, in grey: the surface, on the stamp.">
+            </div>
+            <div class="end__addr">
+              <p>The surface photographs: Patrick Hendry, Pavel Voinov and Sonja Langford, via Unsplash.</p>
+              <p>The weather clip: GOES imagery, CSU/CIRA and NOAA, public domain, via Wikimedia Commons.</p>
+              <p>The strata: James St. John (CC BY 2.0), Andre Belozeroff (CC BY-SA 3.0), Bongiovanni, Stewart and Jamieson (CC BY 4.0), Raimond Spekking (CC BY-SA 4.0), and Cjrufe (CC0), via Wikimedia Commons; NASA, NOAA, USGS, USFWS and the Library of Congress in the public domain.</p>
+              <p>The gorilla: gorilla.jpg, supplied by the well operator.</p>
+            </div>
+          </div>
+        </div>
+        <p class="end__imprint">The Page: a boring record of an impossible descent. No cookies, no analytics; nothing was collected except distance.</p>
+      </div>
+    </div>
+  </footer>
+
+</main>
+
+<script src="app.js" defer></script>
+</body>
+</html>

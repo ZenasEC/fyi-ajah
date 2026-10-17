@@ -1,0 +1,114 @@
+[
+ {
+  "slug": "soil",
+  "file": "assets/fields/soil.jpg",
+  "title": "File:Soil Profile Containing an Argillic Horizon.jpg",
+  "by": "Cjrufe",
+  "license": "CC0",
+  "bytes": 2658421
+ },
+ {
+  "slug": "till",
+  "file": "assets/fields/till.jpg",
+  "title": "File:Alpine glacial till (Pleistocene; near Dana Fork, Yosemite National Park, California, USA) 1.jpg",
+  "by": "James St. John",
+  "license": "CC BY 2.0",
+  "bytes": 1211043
+ },
+ {
+  "slug": "granite",
+  "file": "assets/fields/granite.jpg",
+  "title": "File:Landscape of Granite Outcrop (5572356924).jpg",
+  "by": "U.S. Fish and Wildlife Service Southeast Region",
+  "license": "Public domain",
+  "bytes": 887956
+ },
+ {
+  "slug": "water",
+  "file": "assets/fields/water.jpg",
+  "title": "File:Gypsum crust on limestone wall in Great Onyx Cave (Flint Ridge, Mammoth Cave National Park, Kentucky, USA) 9 (8313145805).jpg",
+  "by": "James St. John",
+  "license": "CC BY 2.0",
+  "bytes": 667672
+ },
+ {
+  "slug": "kilometre",
+  "file": "assets/fields/kilometre.jpg",
+  "title": "File:Gneiss (Henry County, Virginia, USA) (49155756208).jpg",
+  "by": "James St. John",
+  "license": "CC BY 2.0",
+  "bytes": 1116329
+ },
+ {
+  "slug": "ocean",
+  "file": "assets/fields/ocean.jpg",
+  "title": "File:Exploring High-Resolution Sea Surface Height Data from NASA’s SWOT Satellite (SVS5538 - HD 05820).jpg",
+  "by": "NASA's Scientific Visualization Studio - USRA/Kel Elkins, NA",
+  "license": "Public domain",
+  "bytes": 398052
+ },
+ {
+  "slug": "everest",
+  "file": "assets/fields/everest.jpg",
+  "title": "File:This view from space shuttle Columbia shows Mount Everest, which reaches 29,028 feet in elevation (8,848 meters), along with many glaciers (mount-everest-from-space).jpg",
+  "by": "NASA",
+  "license": "Public domain",
+  "bytes": 1322356
+ },
+ {
+  "slug": "challenger",
+  "file": "assets/fields/challenger.jpg",
+  "title": "File:GEBCO 2019 bathymetry Challenger Deep and Sirena Deep.jpg",
+  "by": "Cassandra Bongiovanni, Heather A. Stewart and Alan J. Jamies",
+  "license": "CC BY 4.0",
+  "bytes": 587001
+ },
+ {
+  "slug": "kola",
+  "file": "assets/fields/kola.jpg",
+  "title": "File:Кольская сверхглубокая скважина.jpg",
+  "by": "Andre Belozeroff",
+  "license": "CC BY-SA 3.0",
+  "bytes": 627394
+ },
+ {
+  "slug": "moho",
+  "file": "assets/fields/moho.jpg",
+  "title": "File:Pillow basalt crop l.jpg",
+  "by": "National Oceanic and Atmospheric Administration",
+  "license": "Public domain",
+  "bytes": 563798
+ },
+ {
+  "slug": "asthenosphere",
+  "file": "assets/fields/asthenosphere.jpg",
+  "title": "File:Peridotite mantle xenolith in basalt (near Mount Trumbull, Arizona, USA) (40590968485).jpg",
+  "by": "James St. John",
+  "license": "CC BY 2.0",
+  "bytes": 787886
+ },
+ {
+  "slug": "dprime",
+  "file": "assets/fields/dprime.jpg",
+  "title": "File:Eruption within Halema‘uma‘u crater, Kīlauea summit - November 3, 2021 (101110).jpg",
+  "by": "USGS\n\nHawaiian Volcano Observatory",
+  "license": "Public domain",
+  "bytes": 745464
+ },
+ {
+  "slug": "outercore",
+  "file": "assets/fields/outercore.jpg",
+  "title": "File:INTERIOR VIEW OF MAGNESIUM TREATMENT AREA, LOOKING NORTH, WITH 10-TON LADLE POURING MOLTEN IRON INTO 20-TON LADLE. - United States Pipe and Foundry Company Plant, Melting and HAER ALA,37-BES,6A-7.tif",
+  "by": "\nLowe, Jet, creator",
+  "license": "Public domain",
+  "bytes": 408631
+ },
+ {
+  "slug": "innercore",
+  "file": "assets/fields/innercore.jpg",
+  "title": "File:Meteorite slab with Widmanstätten pattern, found in New Mexico in 1896, 12 kg, iron-nickel alloy - Redpath Museum - McGill University - Montreal, Canada - DSC07886.jpg",
+  "by": "Daderot",
+  "license": "CC0",
+  "bytes": 372507
+ }
+]

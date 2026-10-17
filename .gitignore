@@ -1,0 +1,6 @@
+# Development tooling: QA scripts, screenshots and working files (not part of the site)
+.taste-skill/
+
+# OS noise
+Thumbs.db
+.DS_Store
